@@ -15,19 +15,19 @@
     <form class="sign-up" method="post">
       <h1 class="big-text">Let's set up your account</h1>
       <h2 class="small-text">Already have an account? <a href="#">Sign in</a></h2>
-      <div>
-        <input type="text" name="Name" placeholder=" ">
-        <label for="Name">Your name</label>
+      <div id="name-div">
+        <input type="text" name="Name" placeholder=" " id="name-input">
+        <label for="Name" id="name-label">Your name</label>
       </div>
 
       <div>
-        <input type="email" name="Email" placeholder=" ">
-        <label for="Email">Email address</label>
+        <input type="email" name="Email" placeholder=" " id="email-input">
+        <label for="Email" id="email-label">Email address</label>
         <i class="fa fa-eye" aria-hidden="true"></i>
       </div>
 
       <div>
-        <select name="type">
+        <select name="type" id="description-input">
           <option value="option0" selected disabled>I would describe my user type as</option>
           <option value="option1">Developer</option>
         </select>
@@ -35,14 +35,14 @@
       </div>
 
       <div>
-        <input type="password" name="Password" placeholder=" ">
-        <label for="Password">Password</label>
+        <input type="password" name="Password" placeholder=" " id="password-input">
+        <label for="Password" id="password-label">Password</label>
         <i class="fa fa-eye" aria-hidden="true"></i>
       </div>
       <span class="hint"for="Password">Minimum 8 characters</span>
 
 
-      <button type="submit" name="submit">Next</button>
+      <button type="submit" name="submit" id="next-btn">Next</button>
 
       <p>By clicking the "Next" button, you agree to creating a free account, and to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
     </form>
@@ -63,7 +63,7 @@
 
   </div>
 
-
+  <script src="app.js"></script>
 </body>
 
 </html>
