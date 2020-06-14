@@ -78,6 +78,20 @@ input {
   width: 35.1rem;
 }
 
+.success, .error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background: green;
+}
+
+.error {
+  background: red;
+}
+
 button {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -97,6 +111,16 @@ input:not(:placeholder-shown)+label {
   background-color: white;
   transform: scale(.85) translateY(-50%) translateX(-2rem);
 }
+
+.is-invalid {
+  color: red;
+}
+
+/*.invalid-feedback {
+  font-size: 0.5rem;
+  color: red;
+  border: none;
+}*/
 
 button:focus {
   background-color: #ededed;
